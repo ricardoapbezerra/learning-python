@@ -55,3 +55,32 @@ Referências:
 * Aulas USP de Ciência da Computação com Python [aqui](https://panda.ime.usp.br/aulasPython/static/aulasPython/aula09.html) e [aqui](https://panda.ime.usp.br/aulasPython/static/aulasPython/aula10.html)
 * [Documentação do Python](https://docs.python.org/2/tutorial/datastructures.html#more-on-lists)
 * [W3School List](https://www.w3schools.com/python/python_lists.asp)
+
+## Tuplas
+
+As tuplas são parecidas com listas porém possuem a característica de serem imutáveis.
+
+Tuplas são criadas utilizando parenteses
+
+```python
+diversos = ('Arroz', 20, 'gramas', 'Feijão')
+```
+Podem ser acessadas por índices
+```python
+diversos[2]
+'gramas'
+```
+**Importante**
+A estrutra da tupla é imutável mas não necessariamente seu conteúdo:
+
+```python
+palhacos = ['Atchim', 'Espirro']
+tupla1 = ('Alguns palhaços', palhacos)
+print(tupla1)
+('Alguns palhaços', ['Atchim', 'Espirro'])
+palhacos.extend(['Patati', 'Patata'])  
+print(tupla1)
+('Alguns palhaços', ['Atchim', 'Espirro', 'Patati', 'Patata'])
+```
+
+Referências: [Quando usar listas e quando usar tuplas](https://pt.stackoverflow.com/questions/192727/quando-usar-listas-e-quando-usar-tuplas)
